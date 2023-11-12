@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
-import { RiMoonFill, RiMoonLine, RiSunLine } from "react-icons/ri";
+import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 type NavItem = {
