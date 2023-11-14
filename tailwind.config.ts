@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -7,6 +7,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        bounce:
+          "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
+      },
+      keyframes: {
+        bounce: {
+          from: { transform: "translateY(10px)" },
+          to: { transform: "translateY(0)" },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -15,6 +25,6 @@ const config: Config = {
     },
   },
   plugins: [],
-  darkMode: "class"
-};
-export default config;
+  darkMode: "class",
+}
+export default config
