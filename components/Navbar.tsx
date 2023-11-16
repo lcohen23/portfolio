@@ -1,14 +1,13 @@
-"use client"
-import React, { useState } from "react"
-import { Link } from "react-scroll/modules"
-import { useTheme } from "next-themes"
-import { RiMoonFill, RiSunLine } from "react-icons/ri"
-import { IoMdMenu, IoMdClose } from "react-icons/io"
+"use client";
+import React, { useState } from "react";
+import { Link } from "react-scroll/modules";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { ModeToggle } from "./ui/ModeToggle";
 
 type NavItem = {
-  label: string
-  page: string
-}
+  label: string;
+  page: string;
+};
 
 const NAV_ITEMS: Array<NavItem> = [
   {
@@ -23,14 +22,12 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Projects",
     page: "projects",
   },
-]
+];
 
 const Navbar = () => {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === "system" ? systemTheme : theme
-  const [navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false);
   return (
-    <header className="fixed top-0 z-50 mx-auto w-full bg-white px-4 shadow dark:border-b dark:border-stone-900 dark:bg-stone-900 sm:px-20">
+    <header className="bg-background fixed top-0 z-50 mx-auto w-full px-4 shadow dark:border-b sm:px-20">
       <div className="justify-between md:flex md:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
@@ -68,29 +65,15 @@ const Navbar = () => {
                   >
                     {item.label}
                   </Link>
-                )
+                );
               })}
-              {currentTheme === "dark" ? (
-                <button
-                  onClick={() => setTheme("light")}
-                  className="rounded-xl bg-slate-100 p-2"
-                >
-                  <RiSunLine size={25} color="black" />
-                </button>
-              ) : (
-                <button
-                  onClick={() => setTheme("dark")}
-                  className="rounded-xl bg-slate-100 p-2"
-                >
-                  <RiMoonFill size={25} />
-                </button>
-              )}
+              <ModeToggle />
             </div>
           </div>
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
