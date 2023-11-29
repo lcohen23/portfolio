@@ -1,13 +1,13 @@
-"use client";
-import React, { useState } from "react";
-import { Link } from "react-scroll/modules";
-import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { ModeToggle } from "./ui/ModeToggle";
+"use client"
+import React, { useState } from "react"
+import { Link } from "react-scroll/modules"
+import { IoMdMenu, IoMdClose } from "react-icons/io"
+import { ModeToggle } from "./ui/ModeToggle"
 
 type NavItem = {
-  label: string;
-  page: string;
-};
+  label: string
+  page: string
+}
 
 const NAV_ITEMS: Array<NavItem> = [
   {
@@ -22,18 +22,20 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Projects",
     page: "projects",
   },
-];
+]
 
 const Navbar = () => {
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false)
   return (
-    <header className="bg-background fixed top-0 z-50 mx-auto w-full px-4 shadow dark:border-b sm:px-20">
+    <header className="fixed top-0 z-50 mx-auto w-full bg-background px-4 shadow dark:border-b sm:px-20">
       <div className="justify-between md:flex md:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
-            <div className="md:block md:py-5">
-              <h2 className="text-2xl font-bold">Liam Cohen</h2>
-            </div>
+            <Link to="home">
+              <div className="md:block md:py-5">
+                <h2 className="text-2xl font-bold">Liam Cohen</h2>
+              </div>
+            </Link>
             <div className="md:hidden">
               <button onClick={() => setNavbar(!navbar)}>
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -65,7 +67,7 @@ const Navbar = () => {
                   >
                     {item.label}
                   </Link>
-                );
+                )
               })}
               <ModeToggle />
             </div>
@@ -73,7 +75,7 @@ const Navbar = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

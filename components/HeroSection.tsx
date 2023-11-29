@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import { Link } from "react-scroll/modules";
-import { HiArrowDown } from "react-icons/hi";
+"use client"
+import React from "react"
+import { Link } from "react-scroll/modules"
+import { HiArrowDown } from "react-icons/hi"
 
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="mb-14 mt-48 flex flex-col items-center justify-center text-center md:mt-20 md:flex-row">
+      <div className="animate-fadeIn mb-14 mt-48 flex flex-col items-center justify-center text-center animation-delay-2 md:mt-20 md:flex-row">
         <div className="md:mt-2 md:w-4/5">
           <h1 className="mt-6 text-4xl font-bold md:mt-36 md:text-7xl lg:text-8xl">
             Hey, I&apos;m Liam!
@@ -43,7 +43,7 @@ const HeroSection = () => {
         </Link>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

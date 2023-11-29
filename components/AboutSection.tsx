@@ -1,16 +1,19 @@
-"use client";
-import React from "react";
-import Image from "next/image";
+"use client"
+import React from "react"
+import Image from "next/image"
 
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="mb-12 mt-32 md:mt-80">
-        <h1 className="text-center text-4xl font-bold">About Me</h1>
+      <div className="mb-80 mt-32 md:mt-80">
+        <h1 className="text-center text-4xl font-bold">
+          About Me
+          <hr className="mx-auto my-4 h-1 w-6 rounded border-0 bg-teal-500"></hr>
+        </h1>
         <div className="flex flex-col items-stretch justify-center space-y-10 align-top md:flex-row md:space-x-10 md:space-y-5 md:p-4 md:text-left">
           <div className="md:w-1/2">
             <h1 className="mb-6 text-center text-2xl font-bold md:text-left">
-              A little about me!
+              A short introduction:
             </h1>
             <p>
               {" "}
@@ -32,19 +35,20 @@ const AboutSection = () => {
               fast I can beat minesweeper on hard difficulty!
             </p>
           </div>
-          <div className="md:mt items-center pl-14 md:w-1/2">
+          <div className="pl-14 md:w-1/2">
             <Image
               className="rounded-full shadow-2xl"
               src="/headshot.jpg"
               alt=""
               width={300}
               height={300}
+              priority
             />
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AboutSection;
+export default AboutSection
