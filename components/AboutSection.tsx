@@ -35,9 +35,9 @@ const AboutSection = () => {
               fast I can beat minesweeper on hard difficulty!
             </p>
           </div>
-          <div className="pl-5 sm:pl-14 md:w-1/2">
+          <div className="md:w-1/2">
             <Image
-              className="rounded-full shadow-2xl"
+              className="ml-6 rounded-full shadow-2xl sm:ml-44 md:ml-12"
               src="/headshot.jpg"
               alt=""
               width={300}

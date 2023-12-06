@@ -59,7 +59,6 @@ const projects = [
     description:
       "A Linux userspace device driver that enables the ability to control any software (games, simulators, etc.) that has joystick compatibility",
     image: "/joystick.png",
-    link: "https://youtu.be/Kov-aF4eQhI",
     skills: ["C", "Linux"],
   },
   {
