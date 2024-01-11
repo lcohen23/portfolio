@@ -12,6 +12,7 @@ const projects = [
     image: "/webjournal.png",
     link: "https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-elastic-wordpress-evolution",
     skills: ["AWS", "MariaDB", "WordPress"],
+    altText: "Thumbnail preview of Web Journal project",
   },
   {
     name: "Scale",
@@ -28,6 +29,7 @@ const projects = [
       "Jest",
       "RESTful API",
     ],
+    altText: "Photo of Scale project logo",
   },
   {
     name: "ASL For VetMed",
@@ -45,6 +47,7 @@ const projects = [
       "Bootstrap",
       "CircleCI",
     ],
+    altText: "Thumbnail preview of  ASL for VetMed home page",
   },
   {
     name: "Rocket Ranger",
@@ -53,6 +56,7 @@ const projects = [
     link: "https://www.youtube.com/watch?v=k9NxbNHwWvg",
     image: "/RocketRanger.png",
     skills: ["Processing"],
+    altText: "Photo of Rocket Ranger project main menu",
   },
   {
     name: "Joystick Simulator",
@@ -60,6 +64,7 @@ const projects = [
       "A Linux userspace device driver that enables the ability to control any software (games, simulators, etc.) that has joystick compatibility",
     image: "/joystick.png",
     skills: ["C", "Linux"],
+    altText: "Screenshot of Joystick Simulator project",
   },
   {
     name: "Credential Maps",
@@ -68,6 +73,7 @@ const projects = [
     image: "/bst.png",
     link: "https://github.com/rrkrish561/credential-maps",
     skills: ["C++"],
+    altText: "Photo of a Binary Search Tree",
   },
 ]
 
@@ -104,7 +110,7 @@ const ProjectsSection = () => {
                     ) : (
                       <Image
                         src={project.image}
-                        alt=""
+                        alt={project.altText}
                         width={1000}
                         height={1000}
                         className="rounded-xl shadow-xl"

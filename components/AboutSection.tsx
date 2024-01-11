@@ -39,7 +39,7 @@ const AboutSection = () => {
             <Image
               className="ml-6 rounded-full shadow-2xl sm:ml-44 md:ml-12"
               src="/headshot.jpg"
-              alt=""
+              alt="A head shot photo of me, Liam Cohen"
               width={300}
               height={300}
               priority
