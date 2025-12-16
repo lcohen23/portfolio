@@ -24,9 +24,7 @@ const AboutSection = () => {
             <p>
               I am passionate about making thorough solutions that can bring
               value to consumers. I graduated from the University of Florida in
-              2023 with a BS in Computer Science and a minor in Sociology, and
-              am currently looking to make a name for myself in the professional
-              world.
+              2023 with a BS in Computer Science and a minor in Sociology.
             </p>
             <br />
             <p>
