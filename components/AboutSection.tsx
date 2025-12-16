@@ -18,7 +18,7 @@ const AboutSection = () => {
             <p>
               {" "}
               My name is Liam Cohen, a software engineer raised in South Florida
-              now based in Gainesville, Florida.{" "}
+              now based in Plantation, Florida.{" "}
             </p>
             <br />
             <p>
