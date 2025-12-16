@@ -6,14 +6,14 @@ import { HiArrowDown } from "react-icons/hi"
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="animate-fadeIn mb-14 mt-48 flex flex-col items-center justify-center text-center animation-delay-2 md:mt-20 md:flex-row">
+      <div className="mb-14 mt-48 flex animate-fadeIn flex-col items-center justify-center text-center animation-delay-2 md:mt-20 md:flex-row">
         <div className="md:mt-2 md:w-4/5">
           <h1 className="mt-6 text-4xl font-bold md:mt-36 md:text-7xl lg:text-8xl">
             Hey, I&apos;m Liam!
           </h1>
           <p className="mb-12 mt-4 text-lg md:text-2xl">
             {" "}
-            I&apos;m a Software Engineer currently based in Gainesville, FL. I
+            I&apos;m a Software Engineer currently based in Plantation, FL. I
             love to make robust software solutions that are highly available and
             fault tolerant!
           </p>
